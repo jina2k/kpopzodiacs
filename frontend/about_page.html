@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" style="position: relative; min-height: 100%;">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!--Google API Icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="js/about.js"></script>
+
+        <title>About</title>
+    </head>
+
+    <body class="container-fluid" onload="setAboutEventListeners();" style="background-color: #8F9EC6;">
+        <!-- Place this tag where you want the button to render. -->
+        <div class="rounded" style="margin-top:10%;margin-left: 25%; margin-right: 25%; background-color: #5E5F84; padding: 30px; color: white;">
+            <h2 style="margin-bottom:15px;"><u>About</u></h2>
+            <div style="float:left; margin-right: 5px;">
+            Github:
+            </div> 
+                <a class="github-button" href="https://github.com/jina2k" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @jina2k on GitHub">
+                Follow @jina2k
+                </a>
+            <div style="margin-top: 5px;">
+                <div style="margin-bottom: 15px;">
+                This is a discontinued project that utilizes web scraping from the website
+                <a href="https://kprofiles.com/kpop-birthdays/">kprofiles.com</a>
+                and redirects traffic to the same site depending on what the user's birthday is.
+                </div>
+                <div style="margin-bottom: 15px;">
+                To look at the disclaimers regarding copyright issues,
+                <a href="#" id = "redisc">click here</a>
+                </div>
+                <div style="margin-bottom: 15px;">
+                The extent of web scraping in this project goes as far as copying the birthdays listed and the stage name of each person, and parsing it for ease of use.
+                <br>
+                The rest of the project was intended to store image links found from Google's search engine such as
+                <a href="https://commons.wikimedia.org/">commons.wikimedia.org</a>
+                into an SQL database, but given the size of the data (1400 people) and the limits on Google's Custom Search API, it seemed rather inefficient to retrieve non-existent images under the Creative Commons license. (though for many well-known artists, this was not a concern)
+                <br>
+                As for the implementation, simple functions were used to determine what the user's birthday is close to.
+                </div>
+                The languages used in this project include HTML, CSS, Vanilla Javascript, PHP, and MySQL.
+            </div>
+        </div>
+        <div class="btn" id="redhome" style="margin-left: 25%; margin-right: 25%; margin-top:15px;">
+            << Go back to home.
+        </div>
+    </body>
+
+</html>
