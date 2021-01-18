@@ -263,7 +263,7 @@ function showEverything() {
 		ontopimg.src = imgurl;
 		ontopimg.alt = "Picture of " + memeResults[memeKeys[1]][i]['stageName'];
 		//forbidden access, project discontinued.
-		daydiv.appendChild(ontopimg);
+		//daydiv.appendChild(ontopimg);
 		daydiv.appendChild(adiv);
 		daydiv.appendChild(document.createElement("br"));
 	}
