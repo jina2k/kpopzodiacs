@@ -17,5 +17,3 @@ your kpopzodiac folder should be in \\xampp\htdocs\kpopzodiac like so
 4. Put in your birthday and see the results. Enjoy.
 
 This project was discontinued, as mentioned in the other html pages due to copyright issues regarding images when using og:images from the mentioned kpop website. I didn't see a point in using the Google search API for Creative Commons license pictures of kpop celebrities, even though this was feasible, as it seemed there were only pictures available for very well-known kpop celebrities (this project contains around 1.4k celebrities). Regardless, this project is now open-source and the csv files can be used to expand on this project (probably the most important info). You can look at the license text file for some information regarding fair use.
-
-With regards to the scraper used in this project, I might or might not release it depending on the circumstances.
