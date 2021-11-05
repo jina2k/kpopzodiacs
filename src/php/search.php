@@ -1,8 +1,9 @@
 <?php
 
-  $con = mysqli_connect('localhost','root','','kpop');
-  if (!$con) {
-    echo "Could not connect to the database" . mysqli_error($con);
+  $con = mysqli_connect('mysql','root','password','testdb');
+  if ($con -> connect_errno) {
+    echo "Could not connect to the database" . $con -> connect_error;
+    exit();
   }
   $mmonth = '';
   $dday = '';

@@ -122,10 +122,11 @@ function showResults() {
 	}
 	fullString.push(uYear);
 
+	/*
 	console.log(fullString[0]);
 	console.log(fullString[1]);
 	console.log(fullString[2]);
-
+	*/
 	
 	var xhr = new XMLHttpRequest();
     var params = "month=" + fullString[0] + "&day=" + fullString[1] +
@@ -210,7 +211,7 @@ function checkValues() {
 function showEverything() {
 	document.getElementById("bottombar").style.marginTop = "5%";
 	memeKeys = Object.keys(memeResults);
-	console.log(memeKeys);
+	//console.log(memeKeys);
 	//month,day,year,zodiac
 	var dayheader = document.createElement("h4");
 	dayheader.style.color = "white";
@@ -221,7 +222,7 @@ function showEverything() {
 	for (var i = 0; i < memeResults[memeKeys[1]].length; i++) {
 		var adiv = document.createElement("a");
 		adiv.href = memeResults[memeKeys[1]][i]['url'];
-
+		/*
 		var imgurl = "";
 
 		var xhr = new XMLHttpRequest();
@@ -255,13 +256,14 @@ function showEverything() {
 	        }
 	    }
 	    xhr.send(params);
-
+		*/
 		adiv.style.color = "white";
 		adiv.textContent = memeResults[memeKeys[1]][i]['stageName'] + " " + memeResults[memeKeys[1]][i]['birthday'];
-
+		/*
 		var ontopimg = document.createElement("img");
 		ontopimg.src = imgurl;
 		ontopimg.alt = "Picture of " + memeResults[memeKeys[1]][i]['stageName'];
+		*/
 		//forbidden access, project discontinued.
 		//daydiv.appendChild(ontopimg);
 		daydiv.appendChild(adiv);
@@ -281,6 +283,7 @@ function showEverything() {
 		var adiv = document.createElement("a");
 		adiv.href = memeResults[memeKeys[2]][i]['url'];
 
+		/*
 		var xhr = new XMLHttpRequest();
 	    var params = "url=" + adiv.href;
 	    xhr.open('POST', 'php/og_display.php', true);
@@ -311,7 +314,7 @@ function showEverything() {
 	        }
 	    }
 	    xhr.send(params);
-
+		*/
 		adiv.style.color = "white";
 		adiv.textContent = memeResults[memeKeys[2]][i]['stageName'] + " " + memeResults[memeKeys[2]][i]['birthday'];
 		yeardiv.appendChild(adiv);

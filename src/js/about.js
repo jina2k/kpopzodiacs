@@ -8,5 +8,5 @@ function redirectDisc() {
 }
 
 function redirectHome() {
-	location.replace(encodeURI("front_page.html"));
+	location.replace(encodeURI("index.php"));
 }

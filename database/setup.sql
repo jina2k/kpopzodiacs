@@ -5,6 +5,8 @@ SHOW GLOBAL VARIABLES LIKE 'local_infile';
 SET GLOBAL local_infile = 'ON';
 SHOW GLOBAL VARIABLES LIKE 'local_infile';
 
+show variables like 'secure-file-priv';
+
 CREATE TABLE idols (
 	stageName varchar(100) NOT NULL,
 	birthday DATE NOT NULL,
@@ -21,7 +23,7 @@ CREATE TABLE idolZodiacs (
 
 SET GLOBAL local_infile = 'ON';
 
-LOAD DATA INFILE '..\\..\\htdocs\\kpopzodiac\\database\\kpop.csv'
+LOAD DATA LOCAL INFILE 'kpop.csv'
 INTO TABLE idols
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n' (stageName, birthday, url);
