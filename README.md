@@ -5,7 +5,7 @@ finding similar birthdays to kpop celebs
 
 - git clone "https://github.com/jina2k/kpopzodiacs"
 - Install Docker
-- cd /<directory where you cloned repository>
+- cd /\<directory where you cloned repository\>
 - docker-compose up
 - Go to localhost:8080
 - Input birthday
